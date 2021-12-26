@@ -1,0 +1,14 @@
+{% extends 'shopping/base.html' %}
+{% block body_block %}
+{% load static %}
+
+<title>Add items</title>
+<div>
+    <h1>Add items for purchase</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" name="submit" id="submit" value="Add/Update">
+    </form>    
+</div>
+{% endblock %}

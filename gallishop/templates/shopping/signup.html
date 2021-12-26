@@ -1,0 +1,14 @@
+{% extends 'shopping/base.html' %}
+{% block body_block %}
+{% load static %}
+
+<title>Login to Galli shop</title>
+<div>
+    <h1>Register for Galli shop</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" name="submit" id="submit" value="SignUp">
+    </form>    
+</div>
+{% endblock %}

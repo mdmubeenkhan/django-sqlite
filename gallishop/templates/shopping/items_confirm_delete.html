@@ -1,0 +1,15 @@
+{% extends 'shopping/base.html' %}
+{% block body_block %}
+{% load static %}
+
+<title>Delete</title>
+<div>
+    <h1>Delete confirm</h1>
+    <form action="" method="POST">
+        <p>Ary you sure you want to <b>delete?</b></p>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" name="submit" id="submit" value="Delete">
+    </form>    
+</div>
+{% endblock %}

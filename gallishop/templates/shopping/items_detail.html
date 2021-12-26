@@ -1,0 +1,13 @@
+{% extends 'shopping/base.html' %}
+{% block body_block %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/table.css' %}">
+<title>Item names</title>
+<div>
+    <h1>Item list</h1>
+    <h3>{{ items.name }}</h3>
+    <h3>{{ items.category }}</h3>
+    <h3>{{ items.price }}</h3>
+    <h3>{{ items.quantity }}</h3>
+</div>
+{% endblock %}

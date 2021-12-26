@@ -1,0 +1,42 @@
+.navleft ul li{
+    display: inline-block;
+    margin-right: 2mm;
+    margin-left: 4mm;
+}
+.navleft{
+    margin-right: 5mm;
+}
+.navright{
+    margin-left: 25mm;
+}
+.navright ul li{
+    display: inline-block;
+    margin-right: 2mm;
+}
+.navbar div{
+    display: inline-block;
+    margin-left: 1mm;
+}
+.navbar{
+    background-color: #fed8a1;
+    max-width: 1800px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+.brand a{
+    color: black;
+    font-size: x-large;
+    margin-right: 10mm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: lightcyan;
+    width: max-content;
+    margin: auto;
+    border-style: solid;
+    color: black;
+}
+
+

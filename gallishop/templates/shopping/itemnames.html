@@ -1,0 +1,29 @@
+{% extends 'shopping/base.html' %}
+{% block body_block %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/table.css' %}">
+<title>Purchased items</title>
+<div>
+    <h1>Details of items purchased.</h1>
+    {% if items_list %}
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </thead>
+            {% for item in items_list %}
+            <tr>
+                <td><a href="/shopping/detail/{{item.id}}">{{ item.name }}</a></td>
+                <td>{{ item.category }}</td>
+                <td>{{ item.price }}</td>
+                <td>{{ item.quantity }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+            <p>No items added for purchase. Please add items for purchase.</p>
+    {% endif %}  
+</div>
+{% endblock %}
