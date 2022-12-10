@@ -1,3 +1,9 @@
+.createdby{
+    max-height: 5mm;
+    margin-left: 200mm;
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+}
 .navleft ul li{
     display: inline-block;
     margin-right: 2mm;
@@ -7,7 +13,8 @@
     margin-right: 5mm;
 }
 .navright{
-    margin-left: 25mm;
+    margin-left: 22mm;
+    margin-right: 2mm;
 }
 .navright ul li{
     display: inline-block;
