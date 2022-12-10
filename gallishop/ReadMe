@@ -1,0 +1,11 @@
+
+This project usage requires the following
+
+1. Install mongo db and pip3 install pymongo, django-nonrel
+2. Create database with name = "shopping"
+    a. use shopping
+    b. db.createCollection("items")
+3. python3 manage.py makemigrations
+4. python3 manage.py migrate
+5. python3 manage.py runserver
+6. navigate to http://127.0.0.1:8000/shopping/home/
