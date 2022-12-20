@@ -79,8 +79,8 @@ WSGI_APPLICATION = 'gallishop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'shopping',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.shopping',
     }
 }
 
