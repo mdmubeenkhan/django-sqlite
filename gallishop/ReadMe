@@ -6,3 +6,13 @@ This project usage requires the following  - this uses default sqlite3 database
 3. python3 manage.py migrate
 4. python3 manage.py runserver
 5. navigate to http://127.0.0.1:8000/shopping/home/
+
+To use docker
+1. To create docker image = sudo docker build --tag mdmubeenkhan/gallishop:latest .
+2. To run = docker run --name gallishop-app -d -p 8000:8000 mdmubeenkhan/gallishop:latest
+3. Launch application = http://localhost:8000/shopping/home/
+
+4. To push image to docker 
+    sudo docker login -u mdmubeenkhan #--for password use the Access token generated from dockerhub
+    sudo docker image push mdmubeenkhan/gallishop:latest
+5. To download docker image = docker pull mdmubeenkhan/gallishop
